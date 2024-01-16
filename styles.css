@@ -74,10 +74,38 @@ header {
   color: #e5e7eb;
 }
 
+.main-sections {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.first,
+.second,
+.third {
+  display: flex;
+  height: 300px;
+  border: 1px solid black;
+}
+
+.first {
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  gap: 50px;
+}
+
+.box {
+  height: 150px;
+  width: 150px;
+  border: 1px solid red;
+}
+
 footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #1f2937;
   color: #e5e7eb;
-  text-align: center;
-
   height: 70px;
 }
