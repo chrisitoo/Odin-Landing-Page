@@ -7,6 +7,7 @@ body {
 
 header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   width: 100%;
   height: 500px;
@@ -37,7 +38,6 @@ header {
 
 .nav-bar {
   display: flex;
-  align-self: flex-start;
   justify-content: flex-end;
 }
 
@@ -84,8 +84,7 @@ header {
 .second,
 .third {
   display: flex;
-  height: 300px;
-  border: 1px solid black;
+  height: 400px;
 }
 
 .first {
@@ -99,6 +98,31 @@ header {
   height: 150px;
   width: 150px;
   border: 1px solid red;
+}
+
+.second {
+  background-color: #e5e7eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote {
+  width: 41%;
+}
+
+.quote p {
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 100;
+  color: #1f2937;
+}
+
+.quote span {
+  display: block;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 73%;
 }
 
 footer {
