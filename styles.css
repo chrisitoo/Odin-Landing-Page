@@ -20,7 +20,6 @@ header {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
-  border: 1px solid white;
   width: 65%;
 }
 .top-half,
@@ -34,7 +33,6 @@ header {
 
 .header-logo h1 {
   color: white;
-  border: 1px solid white;
 }
 
 .nav-bar {
@@ -45,7 +43,7 @@ header {
 }
 
 .nav-bar ul {  
-  border: 1px solid white;
+  
   list-style: none;
   display: flex;
   flex: 1;
@@ -56,7 +54,6 @@ header {
 }
 
 .top-half div {
-  border: 1px solid white;
   flex: 1;
 }
 
@@ -65,7 +62,6 @@ header {
 }
 
 .bottom-half div {
-  border: 1px solid white;
   flex: 1;
 }
 
@@ -78,7 +74,38 @@ header {
 .bottom-half p {
   font-size: 18px;
   color: #e5e7eb;
+  
 }
+
+.hero-text  {
+  padding-bottom: 100px;
+}
+
+.hero-text p {
+  margin-top: -30px;
+}
+.hero-text button {
+  background-color: #3882F6;
+  border-radius: 10px;
+  padding: 5px 30px 5px 30px;
+  color: white;
+}
+
+.button {
+  margin-top: -15px;
+}
+
+.media {
+  display:flex;
+  justify-content: center;;
+  
+}
+
+.bottom-half img {
+  height: 300px;
+  width: 300px;
+}
+
 
 .main-sections {
   display: flex;
