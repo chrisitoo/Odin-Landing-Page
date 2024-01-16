@@ -1,14 +1,12 @@
 body {
-  margin: 0px;
   padding: 0px;
+  margin: 0px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.flex-container {
+header {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
   width: 100%;
   height: 500px;
@@ -16,76 +14,62 @@ body {
   background-color: #1f2937;
 }
 
-.nav-bar {
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border: 1px solid white;
+  width: 65%;
+}
+.top-half,
+.bottom-half {
+  flex: 1;
+}
+.top-half {
   display: flex;
   justify-content: space-between;
-  align-self: flex-start;
-  width: 60%;
-  border: 1px solid white;
 }
 
-.nav-bar h2 {
+.header-logo {
   color: white;
-  padding: 5px;
+}
+
+.nav-bar {
+  display: flex;
+  align-self: flex-start;
+  justify-content: flex-end;
 }
 
 .nav-bar ul {
-  display: flex;
-  gap: 25px;
   list-style: none;
-  border: 1px solid white;
-}
-
-.nav-bar li {
-  color: #e5e7eb;
-  font-size: 18px;
-}
-
-.hero-box {
   display: flex;
-  width: 60%;
-  gap: 25px;
+  width: 50%;
+  justify-content: space-between;
+  color: white;
+}
+
+.top-half div {
   border: 1px solid white;
-  margin-bottom: 50px;
+  flex: 1;
 }
 
-.hero-box div {
+.bottom-half {
   display: flex;
-  flex-wrap: wrap;
-
-  flex: 1 1 0%;
-  border: 1px solid red;
 }
 
-.main-text {
-  padding-left: 5px;
+.bottom-half div {
+  border: 1px solid white;
+  flex: 1;
+}
+
+.bottom-half h1 {
   font-size: 48px;
   font-weight: bolder;
-  color: #f9faf8;
-
-  border: 1px solid white;
+  color: #e5e7eb;
 }
 
-.secondary-text {
-  padding-left: 5px;
+.bottom-half p {
   font-size: 18px;
   color: #e5e7eb;
-  margin-top: -30px;
-  border: 1px solid white;
-}
-
-.hero-box button {
-  background-color: #3882f6;
-  padding: 5px 20px 5px 20px;
-
-  color: white;
-  border-radius: 25%;
-  margin-top: -18px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-weight: bold;
-}
-
-.img {
-  background-color: gray;
 }

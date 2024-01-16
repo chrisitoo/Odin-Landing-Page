@@ -3,32 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <link href="styles.css" rel="stylesheet" />
     <title>Document</title>
   </head>
   <body>
-    <header class="flex-container">
-      <div class="nav-bar">
-        <h2 class ="logo">Header Logo</h2>
+    <header>
+      <div class="flex-container">
+        <div class="top-half">
+          <div class="header-logo">
+            <h1>Header Logo</h1>
+          </div>
 
-        <ul class="links">
-          <li>header link one</li>
-          <li>header link two</li>
-          <li>header link three</li>
-        </ul>
-      </div>
-
-      <div class="hero-box">
-        <div class="hero-text">
-          <h1 class="main-text">This website is awesome</h1>
-          <p class="secondary-text">
-            This website has some subset text that goes here under the main
-            title. It's a smaller font and the color is lower contrast
-          </p>
-          <button>Sign up</button>
+          <div class="nav-bar">
+            <ul>
+              <li>header link one</li>
+              <li>header link two</li>
+              <li>header link three</li>
+            </ul>
+          </div>
         </div>
 
-        <div class="img"></div>
+        <div class="bottom-half">
+          <div class="hero-text">
+            <div class="main"></div>
+            <h1>This website is awesome</h1>
+            <div class="secondary"></div>
+            <p>
+              This website has some subset text that goes here under the main
+              title. It's a smaller font and the color is lower contrast.
+            </p>
+            <div class="button"><button>Sign up</button></div>
+          </div>
+
+          <div class="image">
+            <img />
+          </div>
+        </div>
       </div>
     </header>
   </body>
